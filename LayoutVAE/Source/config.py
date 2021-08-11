@@ -7,10 +7,10 @@ Created on Tue Aug 10 18:24:51 2021
 
 # PATHS
 
-SAVE_MODEL_PATH     = "C:\\Users\\TUSHAR\\Downloads\\Layout VAE\\TrainedModel\\"
-SAVE_LOG_PATH       = "C:\\Users\\TUSHAR\\Downloads\\Layout VAE\\Output\\"
-DATA_PATH           = "C:\\Users\\TUSHAR\\Downloads\\Layout VAE\\Data\\publaynet.npy"
-SAVE_OUTPUT_PATH    = "C:\\Users\\TUSHAR\\Downloads\\Layout VAE\\Output\\"
+SAVE_MODEL_PATH     = ""
+SAVE_LOG_PATH       = ""
+DATA_PATH           = ""
+SAVE_OUTPUT_PATH    = ""
 
 # Parameters
 CVAE_LR         = 1e-5
