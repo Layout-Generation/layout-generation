@@ -3,6 +3,7 @@
 The intersection over the union of boxes is calculated pairwise and are then added together. The overall IoU of the data is averaged over all the documents.
 
 For the kth document in the data, the iou Lk is calculated as follows:
+
 ![iou1](/Metrics/readme_images/iou1.jpg)
 
 Where n is the total number of boxes in the document.
