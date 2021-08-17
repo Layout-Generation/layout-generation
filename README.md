@@ -33,13 +33,13 @@ The paper also emphasized on the fact that this model performs better than the e
 LayoutGAN uses a GAN  network , with the generator taking randomly sampled inputs (class probabilities and geometric parameters) as parameters, arranging them and thus producing refined geometric and class parameters.
 
 ### Architecture  
-<img src="LayoutGAN/demo/layoutgan.png" width="787" height="473">
+<img src="LayoutGAN/demo/layoutgan.png" width="700" height="300">
 
 ### Results on MNIST
 ![](LayoutGAN/demo/mnist_obtained.jpeg)
 
 ### Results on single column layouts
-<img src="LayoutGAN/demo/single_col_result.png" width="450" height="750">
+<img src="LayoutGAN/demo/single_col_result.png" height="787" width="473">
 
 ## Quantitative Comparison:
 A total of three metrics were used to compare the models. 
