@@ -7,10 +7,12 @@ LayoutVAE is a variational autoencoder based model . It is a probabilistic and a
 * **BBox VAE:** This the second part of the model was BBox VAE with LSTM based Embedding Generation. Similar to Countvae here also previous predictions along with the label set and label counts are used as conditioning info for current predictions.
 
 ### Layout VAE Model: 
-![VAE_model](/readme_images/VAE_model.png)
+![modelvae](https://user-images.githubusercontent.com/40228110/129761484-ba8b3494-67dc-437e-813e-705c9de19630.png)
+
 
 ### Flow Diagram of Both Count and BBox VAE: 
-![flow_VAE](/readme_images/Flow_diag_VAE.png)
+![Architecture](https://user-images.githubusercontent.com/40228110/129761516-a33098f9-15f1-4bcd-88de-04644beeae1c.png)
+
 
 ### Results Obtained:
 ![VAE_result](/readme_images/VAE_result.png)
