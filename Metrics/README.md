@@ -31,4 +31,9 @@ Adjacent elements (boxes) are usually in six possible alignment types: Left, X-c
 
 ## Comparison
 Data was normalised with respect to the original data.
-![comp](/Metrics/readme_images/comp.png)
+|                    |   Overlap   |     IOU     | Alignment |
+|--------------------|:-----------:|:-----------:|:---------:|
+|    Original Data   |   1.000000  |   1.000000  |  1.000000 |
+|      LayoutGAN     | 1172.005234 | 2745.437529 |  1.164882 |
+|      LayoutVAE     |  119.320127 |  185.864381 |  3.493406 |
+| Layout Transformer |   1.090315  |   1.422297  |  0.739862 |
