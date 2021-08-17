@@ -15,7 +15,7 @@ LayoutVAE is a variational autoencoder based model . It is a probabilistic and a
 ### Results Obtained:
 ![VAE_result](/readme_images/VAE_result.png)
 
-## 2. Layout Generator
+## 2. Layout Transformer
 Layout Transformer is a model proposed for generating structured layouts which can be used for documents, websites, apps, etc. It uses the decoder block of the Transformer Model, which is able to capture the relation of the document boxes with the previously predicted boxes (or inputs). Since it is an auto-regressive model, it can be used to generate entirely new layouts or to complete existing partial layouts.
 The paper also emphasized on the fact that this model performs better than the existing models (at that time) and is better in the following aspects:
 * Able to generate layouts of arbitrary lengths
