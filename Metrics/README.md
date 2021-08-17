@@ -30,4 +30,5 @@ Adjacent elements (boxes) are usually in six possible alignment types: Left, X-c
 ![alg2](/Metrics/readme_images/algn2.jpg)
 
 ## Comparison
+Data was normalised with respect to the original data.
 ![comp](/Metrics/readme_images/comp.png)
