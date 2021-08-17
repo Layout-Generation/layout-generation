@@ -8,7 +8,7 @@
 * [Layout Transformer](#layout-transformer)
   * [Layout Transformer Model Architecture](#layout-transformer-model-architecture)
   * [Results](#results)
-* [Layout GAN](#layoutgan)
+* [LayoutGAN](#layoutgan)
   * [Architecture](#architecture)
   * [Results on MNIST](#results-on-mnist)
   * [Results on single column layouts](#results-on-single-column-layouts)
