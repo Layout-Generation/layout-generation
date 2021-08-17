@@ -1,5 +1,5 @@
-# LayoutGAN (unofficial)
-This repository provides the unofficial code in Tensorflow 2.0 for the paper "LayoutGAN: Generating Graphic Layouts with Wireframe Discriminators"
+# LayoutGAN 
+This repository provides the our implementation in Tensorflow 2.0 of "LayoutGAN: Generating Graphic Layouts with Wireframe Discriminators"
 https://arxiv.org/abs/1901.06767
 ### Architecture  
 ![](demo/layoutgan.png)
