@@ -66,4 +66,9 @@ A total of three metrics were used to compare the models.
 
 After Calculating the losses for each model, the following comparison table was obtained:
 
-![metric_table](/readme_images/metric_table.png)
+|                    |   Overlap   |     IOU     | Alignment |
+|--------------------|:-----------:|:-----------:|:---------:|
+|    Original Data   |   1.000000  |   1.000000  |  1.000000 |
+|      LayoutGAN     | 1172.005234 | 2745.437529 |  1.164882 |
+|      LayoutVAE     |  119.320127 |  185.864381 |  3.493406 |
+| Layout Transformer |   1.090315  |   1.422297  |  0.739862 |
