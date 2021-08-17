@@ -1,22 +1,6 @@
 # Layout Generation and Baseline Implementation
 
-## 1. Layout GAN
-LayoutGAN uses a GAN  network , with the generator taking randomly sampled inputs (class probabilities and geometric parameters) as parameters, arranging them and thus producing refined geometric and class parameters.
-
-It has two kinds of discriminators mentioned, Relational discriminator which has a similar structure to the generator has effective results but cannot detect the spatial relationships well between the elements.
-
-On the other hand Wireframe rendering discriminator uses a wireframe rendering and CNNs with a fully connected dense layer for real/fake prediction and works as a visual judge for distinguishing visual patterns.
-
-### Generator Model architecture:
-![gen_model_archi](/readme_images/generator_model.png)
-
-### Wireframe Rendering Discriminator Model architecture: 
-![wireframe_render](/readme_images/Wireframe_rendering.png)
-
-### Results Obtained for single column layout:
-![GAN_result](/readme_images/GAN_result.png)
-
-## 2. Layout VAE
+## 1. Layout VAE
 LayoutVAE is a variational autoencoder based model . It is a probabilistic and autoregressive model which generates the scene layout using latent variables in lower dimensions . It is capable of generating different layouts using the same data point.
 
 * **CountVAE:** This is the first part of the layoutVAE model; it takes the label set as input and predicts the counts of bounding boxes for corresponding labels. The input is provided as multilabel encoding.
@@ -31,7 +15,7 @@ LayoutVAE is a variational autoencoder based model . It is a probabilistic and a
 ### Results Obtained:
 ![VAE_result](/readme_images/VAE_result.png)
 
-## 3. Layout Transformer
+## 2. Layout Generator
 Layout Transformer is a model proposed for generating structured layouts which can be used for documents, websites, apps, etc. It uses the decoder block of the Transformer Model, which is able to capture the relation of the document boxes with the previously predicted boxes (or inputs). Since it is an auto-regressive model, it can be used to generate entirely new layouts or to complete existing partial layouts.
 The paper also emphasized on the fact that this model performs better than the existing models (at that time) and is better in the following aspects:
 * Able to generate layouts of arbitrary lengths
@@ -44,6 +28,18 @@ The paper also emphasized on the fact that this model performs better than the e
 ### Results Obtained
 
 ![Trans_result](/readme_images/Trans_res.png)
+
+## 3. LayoutGAN
+LayoutGAN uses a GAN  network , with the generator taking randomly sampled inputs (class probabilities and geometric parameters) as parameters, arranging them and thus producing refined geometric and class parameters.
+
+### Architecture  
+<img src="LayoutGAN/demo/layoutgan.png" width="787" height="473">
+
+### Results on MNIST
+![](LayoutGAN/demo/mnist_obtained.jpeg)
+
+### Results on single column layouts
+<img src="LayoutGAN/demo/single_col_result.png" width="450" height="750">
 
 ## Quantitative Comparison:
 A total of three metrics were used to compare the models. 
