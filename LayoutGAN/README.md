@@ -1,6 +1,13 @@
 # LayoutGAN 
 This repository provides the our implementation in Tensorflow 2.0 of "LayoutGAN: Generating Graphic Layouts with Wireframe Discriminators"
 https://arxiv.org/abs/1901.06767
+
+## Getting Started
+
+<a href="https://colab.research.google.com/gist/nicky7767/4330c280e8083a602c41899431fa8c28/layoutgan-final.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+Click on the above Badge to quickstart the LayoutGAN in google colab
+
 ### Architecture  
 ![](demo/layoutgan.png)
 
