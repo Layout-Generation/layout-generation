@@ -2,8 +2,17 @@
 
 ## Contents
 * [Layout VAE](#layout-vae)
+  * [Layout VAE Model](#layout-vae-model)
+  * [Flow Diagram of Both Count and BBox VAE](#flow-diagram)
+  * [Results Obtained](#results-obtained)
 * [Layout Transformer](#layout-transformer)
+  * [Layout Transformer Model Architecture](#layout-transformer-model-architecture)
+  * [Results](#results)
 * [Layout GAN](#layoutgan)
+  * [Architecture](#architecture)
+  * [Results on MNIST](#results-on-mnist)
+  * [Results on single column layouts](#results-on-single-column-layouts)
+* [Quantitative Comparison](#quantitative-comparison)
 
 
 ##  Layout VAE
@@ -12,15 +21,15 @@ LayoutVAE is a variational autoencoder based model . It is a probabilistic and a
 * **CountVAE:** This is the first part of the layoutVAE model; it takes the label set as input and predicts the counts of bounding boxes for corresponding labels. The input is provided as multilabel encoding.
 * **BBox VAE:** This the second part of the model was BBox VAE with LSTM based Embedding Generation. Similar to Countvae here also previous predictions along with the label set and label counts are used as conditioning info for current predictions.
 
-### Layout VAE Model: 
+### Layout VAE Model 
 ![modelvae](https://user-images.githubusercontent.com/40228110/129761484-ba8b3494-67dc-437e-813e-705c9de19630.png)
 
 
-### Flow Diagram of Both Count and BBox VAE: 
+### Flow Diagram
 ![Architecture](https://user-images.githubusercontent.com/40228110/129761516-a33098f9-15f1-4bcd-88de-04644beeae1c.png)
 
 
-### Results Obtained:
+### Results Obtained
 ![VAE_result](/readme_images/VAE_result.png)
 
 ## Layout Transformer
@@ -30,10 +39,10 @@ The paper also emphasized on the fact that this model performs better than the e
 * Gives better alignment due to the discretized grid
 * Is able to effectively capture the relationships between boxes in a single layout, which gives meaningful layouts
 
-### Layout Transformer Model Architecture: 
+### Layout Transformer Model Architecture
 ![Trans_model](/readme_images/Trans_archi.png)
 
-### Results Obtained
+### Results 
 
 ![Trans_result](/readme_images/Trans_res.png)
 
@@ -49,7 +58,7 @@ LayoutGAN uses a GAN  network , with the generator taking randomly sampled input
 ### Results on single column layouts
 <img src="LayoutGAN/demo/single_col_result.png" height="787" width="473">
 
-## Quantitative Comparison:
+## Quantitative Comparison
 A total of three metrics were used to compare the models. 
 * Overlapping Loss
 * Interection over Union (IoU)
