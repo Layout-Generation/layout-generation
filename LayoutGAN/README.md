@@ -1,6 +1,6 @@
 # LayoutGAN 
-This repository provides the our implementation in Tensorflow 2.0 of "LayoutGAN: Generating Graphic Layouts with Wireframe Discriminators"
-https://arxiv.org/abs/1901.06767
+This repository provides implementation of "LayoutGAN: Generating Graphic Layouts with Wireframe Discriminators"
+https://arxiv.org/abs/1901.06767  in Tensorflow 2.0. 
 
 ## Getting Started
 
