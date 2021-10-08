@@ -142,7 +142,7 @@ if __name__ == '__main__':
     gan = LayoutGAN(batch_size=batch_size, n_component=n_component,
                     n_class=n_class, layout_dim=(60, 40),
                     geometric_dim=geometric_dim,
-                    sample_dir="./samples/MNIST_results",
+                    sample_dir="./samples/publaynet_results",
                     dataset_path="./data/sorted_c1publay.npy")
 
     gan.train()
