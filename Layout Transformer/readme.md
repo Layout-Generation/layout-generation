@@ -1,3 +1,3 @@
 # Layout Transformer Baseline Implementation
 
-### Coming Soon
+Link for the PublayNet Dataset: https://drive.google.com/file/d/1eZMp9FiSUXixYedXhVKMQldJVvTehRMz/view?usp=sharing
